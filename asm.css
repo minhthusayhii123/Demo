@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+    body{
+        padding: 2%;
+        text-align: center;
+    }
+    li{
+        list-style: none;
+        color: black;
+    }
+    a{
+        text-decoration: none;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 50px;
+        height: 70px;
+    }
+    .logo{
+        flex: 1;
+        padding-bottom: 150px;
+        padding-right: 50px;
+    }
+    .menu{
+        flex: 3;
+        display: flex;
+        
+
+    }
+    .menu>li{
+        padding: 15px 20px;
+    }
+    .menu>li:hover .sub-menu{
+        visibility: visible;
+        top: 30px;
+    }
+    .menu>li>a{
+        font-size: 12px;
+        font-weight: bold!important;
+        color: rgba(10, 161, 221, 0.836);
+        display: block;
+        line-height: 20px;
+
+    }
+    .sub-menu{
+        position: absolute;
+        width: 150px;
+        border: 1px solid rgb(11, 163, 173);
+        padding: 10px 0 10px 20px ;
+        visibility: hidden;
+        top: 50px;
+        transition: 0.3s;
+        background-color: paleturquoise;
+    }
+    .sub-menu li a{
+        font-weight: normal;
+        font-size: 12px!important;
+        color: black; 
+        bottom: 50px;
+    }
+    .sub-menu ul{
+        /* padding-left: 20px; */
+        bottom: 20px;
+    }
+    .do{
+        flex: 1;
+        display: flex;
+    }
+    .do>li{
+        padding: 0 12px;
+    }
+    .do>li:first-child{
+        position: relative;
+    }
+    .do>li:first-child input{
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid black;
+    }
+    .do>li:first-child i {
+        position: absolute;
+        right: 10px;
+    }
+    #slideshow{
+        overflow: hidden;
+        height: 510px;
+        width: 1000px;
+        margin: 0 auto;
+    }
+    .slide-wrapper{
+        width: 2912px;
+        -webkit-animation: slide 14s ease infinite;
+    }
+    .slide{
+        float: left;
+        height: 510px;
+        width: 728px;
+
+    }
+    @-webkit-keyframes slide {
+        20% {margin-left: 0px;}
+        30% {margin-left: -728px;}
+        50% {margin-left: -728px;}
+        60% {margin-left: -1456px;}
+        80% {margin-left: -1456px;}
+      }
+      p{
+          font-size: small;
+      }
+      .app{
+          float: left;
+      }
